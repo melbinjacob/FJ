@@ -48,16 +48,11 @@ body{
 }
 
 .s1-bar{
-    width: 80%;
-    height: 35px;
+    width: 900px;
+    height: auto;
     position: absolute;
-    background-color: var(--brown);
     z-index: 2;
     margin-bottom: 8cm;
-    color: var(--white);
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .stars{
