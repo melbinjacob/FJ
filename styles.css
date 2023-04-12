@@ -56,19 +56,19 @@ body{
 }
 
 .stars{
-    position: absolute;
-    right: 10cm;
-    top: 5cm;
+    position: relative;
     width: auto;
     height: 60px;
+    bottom: 3.6cm;
+    left: 5cm;
 }
 
 .stars1{
-    position: absolute;
-    left: 19cm;
-    top: 16cm;
+    position: relative;
     width: auto;
     height: 60px;
+    top: 4.3cm;
+    left: 1cm;
 }
 
 
@@ -100,7 +100,7 @@ body{
     
 }
 
-.s1-r2 > h2{
+.s1-r2-content > h2{
     font-size: 48px;
     margin: 0;
     margin: -15px;
