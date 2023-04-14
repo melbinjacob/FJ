@@ -222,22 +222,6 @@ body{
         text-align: center;
     }
 
-    .container{
-        background-color: #00000000;
-    }
-    
-    .inner-container{
-        background-color: #00000000;
-    }
-    
-    .pushdown{
-        display: none;
-    }
-    
-    a{
-        color: var(--white);
-    }
-
 }
 
 
