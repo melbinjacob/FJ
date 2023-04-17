@@ -9,7 +9,25 @@
     --blue: #3C4165;
     --light-peach: #F3C2B7;
     --peach: #EB9C7B;
+    --transparent:#00000000;
 
+}
+
+/* Updating Navbar */
+
+.sidebar{
+    background-color: var(--transparent);
+}
+
+.sidebar > ul > li > a{
+    color: var(--white);
+}
+
+.container{
+    background-color: var(--transparent);
+}
+.inner-container{
+    background-color: var(--transparent);
 }
 
 .brands-s1{
@@ -25,24 +43,6 @@
     position: relative;
     overflow: hidden;
 }
-
-.container{
-    background-color: #00000000;
-}
-
-.inner-container{
-    background-color: #00000000;
-}
-
-.sidebar{
-    background-color: #00000000;
-}
-
-a{
-    color: var(--white);
-}
-
-
 
 .brands-img1{
     height: inherit;
@@ -69,4 +69,59 @@ a{
 .brand-link{
     cursor: pointer;
 
+}
+
+@media screen and (max-width:767px){
+    .brands-s1{
+        flex-direction: column;
+    }
+   
+    .s1-r{
+        width: 100%;
+        height: 50%;
+    }
+    .brands-img1{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    .logo-center{
+        width: 50px;
+    }
+    .logo-name{
+        width: 100px;
+    }
+
+    /* Updating Navbar */
+
+    .sidebar{
+        background-color: var(--white);
+        margin-bottom: 80px;
+    }
+    
+    .sidebar > ul > li > a{
+        color: var(--black);
+    }
+    
+    .container{
+        background-color: var(--transparent);
+    }
+    .inner-container{
+        background-color: var(--transparent);
+    }
+        /* Creating the Hamburger Bars */
+    .hamburger-menu::before,
+    .hamburger-menu::after,
+    .hamburger-menu > input{
+        background-color: white;
+    }
+
+    .hamburger-menu:has(input:checked)::before{
+        background-color: var(--black);
+    }
+    
+    .hamburger-menu:has(input:checked)::after{
+        background-color: var(--black);
+    }
+    
 }
