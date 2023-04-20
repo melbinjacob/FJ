@@ -60,12 +60,14 @@ body{
 }
 
 .logo{
-    position: relative;
+    position: absolute;
     height: 40px;
     width: auto;
     z-index: 2;
+    left: 85%;
+    bottom: 17.5px;
+    transition: left var(--animation-timing);
 }
-
 
 /* Creating Hamburger Icon */
 /* Better Accessabilty for people with less vision */
@@ -182,16 +184,6 @@ a{
     color: var(--black);
     cursor: pointer;
 }
-
-
-
-.logo{
-    position: absolute;
-    left: 70%;
-    transition: left var(--animation-timing);
-
-}
-
 
 /* Responsiveness  */
 @media  screen and (min-width: 768px){
