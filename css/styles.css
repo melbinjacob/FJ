@@ -1,10 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;500;600;700&display=swap');
-html, body{
-    margin: 0;
-    padding: 0;
-    scroll-behavior: smooth;
-    font-family: 'El Messiri', sans-serif;
-}*{
+*{
     /* Document Colours  */
     --gray:#e9e9e9;
     --dark-gray:#666;
@@ -14,20 +8,19 @@ html, body{
     --blue: #3C4165;
     --light-peach: #F3C2B7;
     --peach: #EB9C7B;
-}.pushdown{
-    width: 100%;
-    height: 80px;
+}.logo{
+    height: 40px;
+    width: auto;
 }.s1-container{
     width: 100%;
     height: 100vh;
     display: flex;justify-content: center;
     align-items: center;
-    background-color: var(--gray);
+    padding-top: 80px;
 }.s1-inner-container{
     width: 80%;
     height: 100vh;
     display: flex;
-    background-color: var(--gray);
     margin-bottom: 4cm;
 }.s1-r1{
     height: 100%;
@@ -151,14 +144,12 @@ html, body{
 }.s2-container{
     width: 100%;
     height: 50vh;
-    background-color: var(--gray);
     display: flex;
     align-items: center;
     justify-content: center;
 }.s2-inner-container{
     width: 40%;
     height: 100%;
-    background-color: var(--gray);
     display: flex;
 }.s2-r1{
     width: 50%;
@@ -216,7 +207,6 @@ html, body{
 }.s3-container{
     width: 100%;
     height: 50vh;
-    background-color: var(--gray);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -248,7 +238,6 @@ html, body{
 }.s4-container{
     width: 100%;
     height: 50vh;
-    background-color: var(--gray);
     display: flex;
     align-items: center;
     justify-content: center;

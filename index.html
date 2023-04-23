@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FJ Designs</title>
-    <!-- <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css"> -->
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/footer.css">
@@ -17,29 +16,23 @@
 <body>
     
     <!-- Header section  -->
-    <header class="container">
-        <div class="inner-container">
-            <!-- Creating Hamburger Menu  -->
-            <label class="hamburger-menu">
-                <input id="navcheck918" type="checkbox">
-            </label>        
-            <!-- Content for Navigation -->
-            <div class="sidebar">
-                <ul>
-                    <li><a href="index.html" onclick="moveSidebar()">Home</a></li>
-                    <li><a href="brands.html" onclick="moveSidebar()">Brands</a></li>
-                    <li><a href="#" onclick="moveSidebar()">Gallary</a></li>
-                    <li><a href="blogs.html" onclick="moveSidebar()">Blog</a></li>
-                    <li><a href="#footer" onclick="moveSidebar()">Contact</a></li>
-                </ul>
-            </div>
-            <a href="index.html">
-                <img class="logo" src="images/logos/fj-logo.png" alt="">
-            </a>
-        </div>
-    </header>
+    <div class="mobile-nav" id="mobilenav">
+        <a href="index.html"><img src="images/logos/fj-logo.png" class="header-logo mobile-logo" id="headerlogo" alt=""></a>
+
+        <img src="images/icons/hamburger.svg"  id="hicon" onclick="mobileNavShow()" alt="">
+        <img src="images/icons/close-icon.svg"  id="closex" onclick="mobileNavHide()" alt="">
+    </div>
+    <div id="nav-containerid">
+        <a href="index.html"><img class="header-logo mobile-gone" src="images/logos/fj-logo.png" alt=""></a>
+        <ul class="container-links">
+            <a href="index.html"><li>Home</li></a>
+            <a href="brands.html"><li>Brands</li></a>
+            <a href="#"><li>Gallary</li></a>
+            <a href="blogs.html"><li>Blogs</li></a>
+            <a href="#footer" onclick="mobileNavHide()"><li>Contact</li></a>
+        </ul>
+    </div>
     <!-- Header section completed -->
-    <div class="pushdown"></div>
 
     <div class="s1-container">    
         <div class="s1-inner-container">
@@ -117,5 +110,6 @@
 
     <div class="copyright"></div>
     <script src="main.js"></script>
+
 </body>
 </html>

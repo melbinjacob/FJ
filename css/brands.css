@@ -1,5 +1,4 @@
 *{
-
     /* Document Colours  */
     --gray:#e9e9e9;
     --dark-gray:#666;
@@ -10,47 +9,29 @@
     --light-peach: #F3C2B7;
     --peach: #EB9C7B;
     --transparent:#00000000;
-
-}
-
-/* Updating Navbar */
-
-.sidebar{
+}.sidebar{/* Updating Navbar */
     background-color: var(--transparent);
-}
-
-.sidebar > ul > li > a{
+}.sidebar > ul > li > a{
     color: var(--white);
-}
-
-.container{
+}.container{
     background-color: var(--transparent);
-}
-.inner-container{
+}.inner-container{
     background-color: var(--transparent);
-}
-
-.brands-s1{
+}.brands-s1{
     width: 100%;
     height: 100vh;
     display: flex;
-}
-
-.s1-r{
+}.s1-r{
     width: 50%;
     height: 100%;
     background-color: black;
     position: relative;
     overflow: hidden;
-}
-
-.brands-img1{
+}.brands-img1{
     height: inherit;
     width: auto;
     object-fit: cover;
-}
-
-.logo-center{
+}.logo-center{
     width: 350px;
     height: auto;
     position: absolute;
@@ -58,71 +39,43 @@
     top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
-}
-
-.logo-name{
+}.logo-name{
     position: absolute;
     top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
-}
-
-.brand-link{
+}.brand-link{
     cursor: pointer;
-
-}
-
-@media screen and (max-width:767px){
+}@media screen and (max-width:767px){
     .brands-s1{
         flex-direction: column;
-    }
-   
-    .s1-r{
+    }.s1-r{
         width: 100%;
         height: 50%;
-    }
-    .brands-img1{
+    }.brands-img1{
         height: 100%;
         width: 100%;
         object-fit: cover;
-    }
-    .logo-center{
+    }.logo-center{
         width: 160px;
-    }
-    .logo-name{
+    }.logo-name{
         width: 100px;
-    }
-
-    /* Updating Navbar */
-
-    .sidebar{
+    }.sidebar{/* Updating Navbar */
         background-color: var(--white);
         margin-bottom: 80px;
-    }
-    
-    .sidebar > ul > li > a{
+    }.sidebar > ul > li > a{
         color: var(--black);
-    }
-    
-    .container{
+    }.container{
         background-color: var(--transparent);
-    }
-    .inner-container{
+    }.inner-container{
         background-color: var(--transparent);
-    }
-        /* Creating the Hamburger Bars */
-    .hamburger-menu::before,
+    }.hamburger-menu::before,/* Updating the Hamburger Bars */
     .hamburger-menu::after,
     .hamburger-menu > input{
         background-color: white;
-    }
-
-    .hamburger-menu:has(input:checked)::before{
+    }.hamburger-menu:has(input:checked)::before{
+        background-color: var(--black);
+    }.hamburger-menu:has(input:checked)::after{
         background-color: var(--black);
     }
-    
-    .hamburger-menu:has(input:checked)::after{
-        background-color: var(--black);
-    }
-
 }

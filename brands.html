@@ -19,31 +19,22 @@
 <body>
 
         <!-- Header section  -->
-    <header class="container">
-
-        <div class="inner-container">
+        <div class="mobile-nav" id="mobilenav">
+            <a href="index.html"><img src="images/logos/fj-logo.png" class="header-logo mobile-logo" id="headerlogo" alt=""></a>
     
-            <!-- Creating Hamburger Menu  -->
-            <label class="hamburger-menu">
-                <input id="navcheck918" type="checkbox">
-            </label>        
-    
-            <!-- Content for Navigation -->
-            <div class="sidebar">
-                <ul>
-                    <li><a href="index.html" onclick="moveSidebar()">Home</a></li>
-                    <li><a href="brands.htm" onclick="moveSidebar()">Brands</a></li>
-                    <li><a href="#" onclick="moveSidebar()">Gallary</a></li>
-                    <li><a href="blogs.html" onclick="moveSidebar()">Blog</a></li>
-                    <li><a href="#footer" class="contact-section" onclick="moveSidebar()">Contact</a></li>
-                </ul>
-            </div>
-            <a href="index.html">
-            <img class="logo" src="images/logos/fj-logo-white.png" alt="">
-            </a>
+            <img src="images/icons/hamburger.svg"  id="hicon" onclick="mobileNavShow()" alt="">
+            <img src="images/icons/close-icon.svg"  id="closex" onclick="mobileNavHide()" alt="">
         </div>
-
-    </header>
+        <div id="nav-containerid">
+            <a href="index.html"><img class="header-logo mobile-gone" src="images/logos/fj-logo.png" alt=""></a>
+            <ul class="container-links">
+                <a href="index.html"><li>Home</li></a>
+                <a href="brands.html"><li>Brands</li></a>
+                <a href="#"><li>Gallary</li></a>
+                <a href="blogs.html"><li>Blogs</li></a>
+                <a href="#footer" onclick="mobileNavHide()"><li>Contact</li></a>
+            </ul>
+        </div>
     <!-- Header section completed -->
     <div class="brands-s1">
 

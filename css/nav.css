@@ -4,159 +4,90 @@ html, body{
     padding: 0;
     scroll-behavior: smooth;
     font-family: 'El Messiri', sans-serif;
-}*, *::before, *::after{
-    box-sizing: border-box;  
-}:root{
-    /* ##Document Colours##  */
-    --gray : #e9e9e9;
-    --black : #000;
-    /* ##Lengths and Timing for Hamburger Icon **Just for the Hamburger Icon and Not used anywher else## */
-    --bar-width: 40px;
-    --bar-height: 6px;
-    --bar-gap: 6px;
-    --animation-timing: 200ms ease-in-out;
-    /* ##Getting the height of Hamburger Menu by adding the bar height and gap##  */
-    --hamburger-height: calc(var(--bar-height) * 3 + var(--bar-gap)*2);
-}body{
-    margin: 0;
-    padding: 0;
-}.container{ /* ####Styling Header Section#### */
+}*{
+    /* Document Colours  */
+    --gray:#e9e9e9;
+    --dark-gray:#666;
+    --black: #000;
+    --brown:#754047;
+    --white: #fff;
+    --blue: #3C4165;
+    --light-peach: #F3C2B7;
+    --peach: #EB9C7B;
+    --transparent:#00000000;
+}.mobile-nav{
+    display: none;
+    z-index: 5;
+    width: 100%;
+    height: 80px;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    background-color: var(--white);
+}#nav-containerid{
     width: 100%;
     height: 80px;
     display: flex;
     align-items: center;
     justify-content: center;
     position: fixed;
-    z-index: 5;
-    background-color: var(--gray);
-}.inner-container{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: relative;
-    z-index: 0;
-}.hamburger-menu{
-    display: none;
-}.logo{
-    position: absolute;
+    transform: translateX(0%);
+    z-index: 1;
+    background-color: var(--white);
+}.header-logo{
     height: 40px;
     width: auto;
-    z-index: 2;
-    left: 85%;
-    bottom: 17.5px;
-    transition: left var(--animation-timing);
-}.hamburger-menu:has(input:focus-visible)::before, /****Creating Hamburger Icon****/
-.hamburger-menu:has(input:focus-visible)::after, /****Better Accessabilty for people with less vision*****/
-.hamburger-menu input:focus-visible{
-
-    border: 1px solid #fff;
-    box-shadow: 0 0 0 1px var(--black);
-}.hamburger-menu{
-    /***** Getting the length of the diagonal by multiplying the hamburger menu height with the square root of 2 because we are using a right angle here (1.41421356237 the square root of 2)  *****/
-    --x-width: calc(var(--hamburger-height) * 1.41421356237);
-    display: flex;
-    flex-direction: column;
-    gap: var(--bar-gap);
-    width: max-content;
-    position: absolute;
-    top: 20px;
-    z-index: 2;
     cursor: pointer;
-    margin-left: 30px;
-}.hamburger-menu::before,/***** Creating the Hamburger Bars *****/
-.hamburger-menu::after,
-.hamburger-menu > input{
-    content: "";
-    width: var(--bar-width);
-    height: var(--bar-height);
-    background-color: var(--black);
-    color: var(--gray);
-    border-radius: 9999px;
-    transition: opacity var(--animation-timing), width var(--animation-timing), rotate var(--animation-timing), translate var(--animation-timing), background-color var(--animation-timing);
-    transform-origin: left center;
-}.hamburger-menu > input{
-    appearance: none;
-    padding: 0;
-    margin: 0;
-    outline: none;
-    pointer-events: none;
-}.hamburger-menu:has(input:checked)::before{ /***** If Hamburger has an input checked inside it then *****/
-    rotate: 45deg;
-    width: var(--x-width);
-    translate: 0 calc(var(--bar-height) / -2)
-}.hamburger-menu:has(input:checked)::after{
-    rotate: -45deg;
-    width: var(--x-width);
-    translate: 0 calc(var(--bar-height) / 2)
-}.hamburger-menu > input:checked{
-    opacity: 0;
-    width: 0;
-}.sidebar{/**** The sidebar  ****/
+}.container-links{
     display: flex;
-    align-items: center;
-    justify-content: center;
-    translate: -100%;
-    padding: .5rem 1rem;
-    transition: translate var(--animation-timing);
-    background-color: var(--gray);
-    width: 100vw;
-    height: 100vh;
-    margin-top: 100vh;
-    position: absolute;
-    z-index: 1;
-}.hamburger-menu:has(input:checked) + .sidebar{
-    translate: 0;
-}.sidebar > ul{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    width: 100vw;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    margin-bottom: 100px;
-    margin-left: 50px;
-}.sidebar > ul >li > a{
-    margin-bottom: 20px;
-    font-size: 14px;
-    margin-right: 1cm;
-}a{
+}.container-links a{
     text-decoration: none;
-    color: var(--black);
     cursor: pointer;
-}@media  screen and (min-width: 768px){/**** Responsiveness  ****/
-    .logo{
-        position: absolute;
-        left: 20%;
-    }.inner-container{
-        width: 60%;
+}.container-links > a > li{
+    list-style: none;
+    cursor: pointer;
+    margin-left: 25px;
+    color: var(--black);
+}#hicon{
+    position: absolute;
+    right: 30px;
+    height: 45px;
+    width: auto;
+    z-index: 5;
+    transition: 300ms ease-in-out;
+    margin-bottom: 5px;
+}#closex{
+    position: absolute;
+    right: 30px;
+    height: 0px;
+    width: auto;
+    z-index: 5;
+    transition: 300ms ease-in-out;
+    margin-bottom: 5px;
+}
+.mobile-logo{
+    position: relative;
+    transition: 300ms ease-in-out;
+    margin-left: 30px;
+}@media screen and (max-width:767px){
+    .mobile-nav{
         display: flex;
-        align-items: center;
+    }#nav-containerid{
+        height: 100vh;
         justify-content: center;
-    }.hamburger-menu{
-        display: none;
-    }.sidebar{
-        height: 100%;
-        width: 100%;
-        translate: 0;
+        align-items: center;
+        transform: translateX(-100%);
+    }.container-links{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         padding: 0;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        margin-top: 0;
-        z-index: -2;
-    }.sidebar > ul{
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        margin-left: 200px;
-        margin-bottom: 0;
-    }.sidebar > ul > a > li{
-        margin-left: 40px;
-        margin-bottom: 0;
+    }.container-links > a > li{
+        margin: 0;
+        margin-bottom: 20px;
+        font-size: 18px;
+    }.mobile-gone{
+        display: none;
     }
 }
+
