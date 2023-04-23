@@ -38,3 +38,15 @@ const mediaQuery2 = window.matchMedia('(max-width: 767px)');
   }
 mediaQuery1.addEventListener('change', handleMediaQuery1);
 mediaQuery2.addEventListener('change', handleMediaQuery2);
+function closeForFooter(){
+  if (window.innerWidth < 767){
+    container.style.transform = ("translateX(-100%)");
+    headerLogo.style.height = "40px";
+    headerLogo.style.opacity = "100%";
+    headerLogo.style.marginBottom = "0px"
+    hamBurger.style.height = "45px";
+    hamBurger.style.opacity = "100%";
+    closeIcon.style.height = "0px";
+    closeIcon.style.opacity = "0%";
+  }
+}
