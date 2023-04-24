@@ -10,7 +10,7 @@
     --peach: #EB9C7B;
     --transparent:#00000000;
 }#mobilenav{
-    background-color: var(--transparent);
+    background-color: var(--transparent); 
 }#nav-containerid{
     background-color: var(--transparent);
 }.container-links > a > li{
