@@ -28,40 +28,30 @@
   display: flex;
 }
 
-.container{
+.gallary-main-container{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-}.container .box{
+}.gallary-main-container .gallary-inner-container{
  display: flex;
  flex-direction: row;
  justify-content: space-between;
-}.container .box .dream{
+}.gallary-main-container .gallary-inner-container .img-clm-div{
   display: flex;
   flex-direction: column;
   width: 33.333%;
-}.container .box .dream img{
+}.gallary-main-container .gallary-inner-container .img-clm-div img{
   width: 100%;
-}.container .btn{
-  background: #222;
-  padding: 15px 40px ;
-  border-radius: 5px;
-}.container .btn a{
- color: #fff;
- font-size: 1.2em;
- text-decoration: none;
- font-weight: bolder;
- letter-spacing: 3px;
 }#footer{
   position: fixed;
   z-index: 5;
   bottom: 0;
 }@media only screen and (max-width: 769px){
-  .container .box{
+  .gallary-main-container .gallary-inner-container{
    flex-direction: column;
-  }.container .box .dream{
+  }.gallary-main-container .gallary-inner-container .img-clm-div{
     width: 100%;
   }#footer{
     position: relative;
@@ -69,9 +59,9 @@
     bottom: 0;
   }
 }@media only screen and (max-width: 643px){
-  .container .heading{
+  .gallary-main-container .heading{
     width: 100%;
-  }.container .heading h3{
+  }.gallary-main-container .heading h3{
     font-size: 1em;
 
   }
