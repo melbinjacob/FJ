@@ -1,5 +1,0 @@
-crawl-***-***-***-***.googlebot.com or geo-crawl-***-***-***-***.geo.googlebot.com
-User-agent: *
-Disallow: /css/
-Disallow: /main.js
-Disallow: /images/icons
