@@ -16,6 +16,8 @@ body{
 }.tile:hover > img{
     opacity: 1;
     transform: scale(1.01);
+    filter: saturate(0%);
+
 }.tile > img{
     height: 100%;
     width: 100%;
@@ -24,6 +26,7 @@ body{
     border-radius: inherit;
     transition:  opacity 800ms ease,
     transform 800ms ease;
+    filter: saturate(100%);
 }.tile:nth-child(1) {
     /* background-color: rgb(255, 238, 88); */
     height: 14%;
@@ -100,6 +103,15 @@ body{
 }#footer{
     position: fixed;
     bottom: 0;
+
+}
+
+@media screen and (min-width:900px){
+    #footer{
+        opacity: 0;
+        transition: 800ms ease;
+    }
+    
 }
 
 @media screen and (max-width:900px){
@@ -236,5 +248,3 @@ body{
         top: 40px;
     }
 }
-
-

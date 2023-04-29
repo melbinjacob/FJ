@@ -31,14 +31,12 @@ const mediaQuery2 = window.matchMedia('(max-width: 767px)');
   function handleMediaQuery1(event) {
     if (event.matches) {
       mobileNavShow();
-      console.log("Function called")
   };
 };
 
 function handleMediaQuery2(event) {
   if (event.matches) {
     mobileNavHide();
-    console.log("Function called")  
   };
 };
 
