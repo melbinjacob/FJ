@@ -20,11 +20,9 @@ function handleMediaQueryChange(e) {
           easing: "ease"
         })
     }
-    
   } else {
     // The viewport is less than 900px wide
   }
-  
 }
 
 // Add an event listener to detect changes in the media query
@@ -52,9 +50,6 @@ if (window.innerWidth >900){
     }
   });
 }
-
-
-
 
 const mediaQuery3 = window.matchMedia('(min-width: 900px)');
 const mediaQuery4 = window.matchMedia('(max-width: 900px)');
