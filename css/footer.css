@@ -1,15 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;500;600;700&display=swap');
-*{
-    /* Document Colours  */
-    --gray:#e9e9e9;
-    --dark-gray:#666;
-    --black: #111;
-    --brown:#754047;
-    --white: #fff;
-    --blue: #3C4165;
-    --light-peach: #F3C2B7;
-    --peach: #EB9C7B;
-}html, body{
+@import url("colors.css");
+html, body{
     scroll-behavior: smooth;
     font-family: 'El Messiri', sans-serif;
     background-color: var(--black);
