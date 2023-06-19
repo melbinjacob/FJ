@@ -1,12 +1,9 @@
 @import url("colors.css");
+
 .logo{
     height: 40px;
     width: auto;
-}
-
-
-.s1-container{
-    padding-top: 80px;
+}.s1-container{
     position: relative;
     width: 100%;
     height: 100vh;
@@ -27,13 +24,15 @@
     align-items: center;
     justify-content: center;
     position: relative;
-}.s1-img1{
+}
+.s1-img1{
     width: auto;
     height: 650px;
-
+}.s1-img2{
+    display: none;
 }.s1-r2{
     height: 100%;
-    width: 30%;
+    width: 50%;
     margin-left: 2cm;
     display: flex;
     align-items: flex-start;
@@ -43,162 +42,241 @@
     width: 300px;
     font-size: 24px;
 }.s1-r2 > h2{
-    font-size: 48px;
+    font-size: 38px;
     margin: 0;
-    margin: -15px;
 }.s1-r2 > h1{
-    font-size: 62px;
+    font-size: 52px;
     margin: 0;
 
 }.s1-r2 > h1, p, h2{
     margin: 0px;
 }
 
-@keyframes dball1 {
-    0%   {
-        left: 0cm;
-        top:8cm;
-    }25%{
-        left:2cm ;
-        top: 6cm;
-    }
-    50%  {
-        top:2cm;
-        left: 4cm;
-    }75%{
-        left: 2cm;
-        top: 6cm;
-    }
-    100% {
-        left: 0cm;
-        top:8cm;
-    }
-}
-
-@keyframes dball2 {
-    0%   {
-        right: 0cm;
-        bottom:8cm;
-    }25%{
-        right:2cm ;
-        bottom: 6cm;
-    }
-    50%  {
-        bottom:2cm;
-        right: 4cm;
-    }75%{
-        right: 2cm;
-        bottom: 6cm;
-    }
-    100% {
-        right: 0cm;
-        bottom:8cm;
-    }
-}
-
-@keyframes dball3 {
-    0%   {
-        bottom: 0cm;
-        right:8cm;
-    }25%{
-        bottom:2cm ;
-        right: 6cm;
-    }
-    50%  {
-        right:2cm;
-        bottom: 4cm;
-    }75%{
-        bottom: 2cm;
-        right: 6cm;
-    }
-    100% {
-        bottom: 0cm;
-        right:8cm;
-    }
-}
-
-@keyframes smdball1 {
-    0%   {
-        bottom: 2cm;
-        right:8cm;
-    }25%{
-        bottom:2cm ;
-        right: 6cm;
-    }
-    50%  {
-        right:2cm;
-        bottom: 4cm;
-    }75%{
-        bottom: 2cm;
-        right: 6cm;
-    }
-    100% {
-        bottom: 2cm;
-        right:8cm;
-    }
-}
-
-@keyframes smdball2 {
-    0%   {
-        top: 2cm;
-        right:0cm;
-    }25%{
-        top:2cm ;
-        right: 6cm;
-    }
-    50%  {
-        right:2cm;
-        top: 4cm;
-    }75%{
-        top: 2cm;
-        right: 6cm;
-    }
-    100% {
-        top: 2cm;
-        right:0cm;
-    }
-}
-
-
-.smdball1{
+.star{
     position: absolute;
-    width: 80px;
-    left: 2cm;
-    animation: smdball1 40s linear infinite; 
+    width: 10px;
+    height: auto;
+    opacity: 20%;
+    transition: 1000ms ease-in-out;
+    z-index: 1;
+
+}.smallstars{
+    width: 18px;
 }
 
-.smdball2{
-    position: absolute;
-    width: 80px;
-    right: 2cm;
-    top: 8cm;
-    animation: smdball2 40s linear infinite; 
+
+.star1{
+    left: 40%;
+    top: 30%;
+}
+.star2{
+    left: 10%;
+    top: 20%;
+}.star3{
+    left: 70%;
+    top: 32%;
+}.star4{
+    right: 20%;
+    bottom: 22%;
+}.star5{
+    right: 40%;
+    bottom: 42%;
+}.star6{
+    right: 60%;
+    bottom: 12%;
+}.star7{
+    top: 10%;
+    right: 12%;
+}.star8{
+    top: 15%;
+    right: 22%;
+}.star9{
+    top: 35%;
+    right: 20%;
+}.star8{
+    top: 25%;
+    right: 40%;
+}.star10{
+    top: 15%;
+    right: 70%;
+}.star11{
+    top: 10%;
+    right: 80%;
+}.star12{
+    right: 40%;
+    bottom: 15%;
+}.star13{
+    right: 8%;
+    bottom: 45%;
+}.star14{
+    right: 8%;
+    bottom: 15%;
+}.star15{
+    top: 25%;
+    right: 6%;
+}.star16{
+    top: 28%;
+    right: 22%;
+}.star17{
+    top: 10%;
+    right: 50%;
+}.star18{
+    top: 20%;
+    right: 30%;
+}.star19{
+    left: 5%;
+    top: 12%;
+}.star20{
+    bottom: 5%;
+    right: 5%;
+}.star21{
+    left: 34%;
+    top: 27%;
+}.star22{
+    left: 69%;
+    top: 25%;
+}.star23{
+    left: 47%;
+    top: 13%;
+}.star24{
+    right: 29%;
+    bottom: 12%;
+}.star25{
+    right: 48%;
+    bottom: 22%;
+}.star26{
+    right: 64%;
+    bottom: 22%;
+}.star27{
+    top: 40%;
+    right: 32%;
+}.star28{
+    top: 10%;
+    right: 52%;
+}.star29{
+    top: 30%;
+    right: 45%;
+}.star30{
+    top: 58%;
+    right: 72%;
+}.star31{
+    top: 15%;
+    right: 70%;
+}.star32{
+    top: 20%;
+    right: 85%;
+}.star33{
+    right: 29%;
+    bottom: 35%;
+}.star34{
+    right: 18%;
+    bottom: 34%;
+}.star35{
+    right: 28%;
+    bottom: 21%;
+}.star36{
+    top: 42%;
+    right: 16%;
+}.star37{
+    top: 10%;
+    right: 60%;
+}.star38{
+    top: 19%;
+    right: 39%;
+}.star39{
+    top: 28%;
+    right: 13%;
+}.star40{
+    left: 85%;
+    top: 30%;
 }
 
-.dball1{
+
+/* Starting  styles for Green Balls */
+.dball{
     position: absolute;
-    width: 180px;
-    left: 2cm;
+    opacity: 40%;
+    z-index: 0;
+}.dball1{
     animation: dball1 40s linear infinite;   
-}.dball2{
-    position: absolute;
-    width: 160px;
-    right: 2cm;
-    bottom: 3cm;
-    animation: dball2 40s linear infinite;   
-
-}.dball3{
-    position: absolute;
-    width: 160px;
-    right: 5cm;
-    top: 3cm;
-    animation: dball3 40s linear infinite;   
-
+    width: 700px;
 }
+/* End of styles for Green Balls */
 
+/* Animations For Green Balls */
+@keyframes dball1 {
+    0%{
+        bottom: -10%;
+        left: -10%;
+    }50%{
+        bottom: 5%;
+        left: 5%;
+    }100%{
+        bottom: -10%;
+        left: -10%;
+    }
+}
+/* End of animations for Green Balls */
 
+/* Styles for Small Brown Balls */
+.smdball{
+    position: absolute;
+    width: 80px;
+    opacity: 50%;
+}.smdball1{
+    animation: smdball1 260s linear infinite;
+    /* border: 5px solid blue; */
 
+}.smdball2{
+    animation: smdball2 160s linear infinite; 
+    /* border: 5px solid red; */
+}.smdball3{
+    animation: smdball3 40s linear infinite; 
+    /* border: 5px solid green; */
+}
+/* End of styles for Small Brown Balls */
+
+@media screen and (max-width:767px) {
+    .s1-img1{
+        display: none;
+    }.s1-r1{
+        height: 350px;
+
+    }
+    .s1-img2{
+        display: block;
+        width: 350px;
+        margin-bottom: 80px;
+
+    }.s1-inner-container{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }.s1-r2{
+        margin: 0;
+        align-items: center;
+        width: auto;
+        height: auto;
+        text-align: center;
+        margin-bottom: -80px;
+    }.dball1{
+        width: 800px;
+    }.s1-container{
+        width: 100%;
+        overflow: hidden;
+    }
+}@media screen and (max-width:430px){
+
+    .s1-container{
+        min-height: 900px;
+        
+    }.s1-r2 > p{
+        font-size: 18px;
+    }
+}
 .wearunique{
+    position: relative;
+    z-index: 2;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -212,7 +290,20 @@
 }.wearunique p{
     width: 800px;
     text-align: center;
+}@media screen and (max-width:767px){
+    .wearunique{
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }.wearunique P{
+        width: 80%;
+        margin-bottom: 40px;
+    }.wearunique h1{
+        font-size: 28px;
+        margin-top: 40px;
+    }
 }
+
 
 .cards-section{
     width: 80%;
@@ -241,5 +332,13 @@
 }
 .card:hover{
     box-shadow: rgba(0, 0, 0, 0.527) 1px 1px 1px, rgba(0, 0, 0, 0.09) 2px 2px 2px, rgba(0, 0, 0, 0.09) 4px 4px 4px, rgba(0, 0, 0, 0.09) 8px 8px 8px, rgba(0, 0, 0, 0.09) 16px 16px 16px;
-   
+}@media screen and (max-width:1100px){
+    .cards-section{
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+    }.card{
+        margin: 20px;
+        width: 75%;
+    }
 }
