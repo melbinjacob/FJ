@@ -28,8 +28,13 @@
 .s1-img1{
     width: auto;
     height: 650px;
+    position: relative;
+    z-index: 2;
+
 }.s1-img2{
     display: none;
+    position: relative;
+    z-index: 2;
 }.s1-r2{
     height: 100%;
     width: 50%;
@@ -58,7 +63,7 @@
     height: auto;
     opacity: 20%;
     transition: 1000ms ease-in-out;
-
+    z-index: 0;
 }.smallstars{
     width: 18px;
 }
@@ -195,7 +200,7 @@
 .dball{
     position: absolute;
     opacity: 40%;
-    z-index: 0;
+    z-index: 1;
 }.dball1{
     animation: dball1 40s linear infinite;   
     width: 700px;
@@ -271,6 +276,12 @@
         
     }.s1-r2 > p{
         font-size: 18px;
+    }.star{
+        -webkit-filter: grayscale(100%);
+        -moz-filter:    grayscale(100%);
+        -ms-filter:     grayscale(100%);
+        -o-filter:      grayscale(100%);
+        filter: gray; 
     }
 }
 .wearunique{
