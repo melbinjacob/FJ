@@ -58,7 +58,6 @@
     height: auto;
     opacity: 20%;
     transition: 1000ms ease-in-out;
-    z-index: 1;
 
 }.smallstars{
     width: 18px;
